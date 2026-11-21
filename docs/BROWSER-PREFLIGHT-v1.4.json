@@ -1,0 +1,19 @@
+{
+  "appVersion": "1.4.0-rc.1",
+  "startedAt": "2026-11-21T18:30:30.456Z",
+  "finishedAt": "2026-11-21T18:30:30.908Z",
+  "packageVersion": "1.62.1",
+  "packagePath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json",
+  "executablePath": "/home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell",
+  "available": false,
+  "browserProcessStarted": false,
+  "method": "Read-only installed-package registry resolution and executable access check; no launch, override, install, workaround, or escalation.",
+  "blocker": {
+    "phase": "read-only browser availability check",
+    "code": "ENOENT",
+    "message": "Required default Playwright Chromium headless-shell executable is unavailable: /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell"
+  },
+  "metadataSource": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core/lib/coreBundle.js",
+  "suiteSha256": "aca1b21f059e9128a564f401cf2ee193d1558ca751f7ecf1075537cc3e712a29",
+  "suiteRecordedAt": "2026-11-21T18:32:18.457Z"
+}

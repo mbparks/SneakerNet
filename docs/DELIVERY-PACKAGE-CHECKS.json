@@ -1,0 +1,90 @@
+{
+  "appVersion": "1.5.0-rc.1",
+  "delivery": "Complete GitHub project plus generated web/ deployment directory",
+  "baselineArchive": "Sneakernet-Social-Club-v1.5.0-rc.1.zip",
+  "baselineArchiveSha256": "0e3132d60d3d83316b240a6f226b39a074f0c9ae2ba1dc3b8e037e5ce886b6e0",
+  "runtimeChanged": false,
+  "runtimeFiles": [
+    "assets/icon-192.png",
+    "assets/icon-512.png",
+    "assets/icon.svg",
+    "index.html",
+    "manifest.webmanifest",
+    "src/app.js",
+    "src/carrier.js",
+    "src/core.js",
+    "src/desk-view.js",
+    "src/experience.js",
+    "src/launch.js",
+    "src/reader.js",
+    "src/storage.js",
+    "styles.css",
+    "sw.js"
+  ],
+  "webFiles": [
+    ".nojekyll",
+    "LICENSE",
+    "assets/icon-192.png",
+    "assets/icon-512.png",
+    "assets/icon.svg",
+    "index.html",
+    "manifest.webmanifest",
+    "src/app.js",
+    "src/carrier.js",
+    "src/core.js",
+    "src/desk-view.js",
+    "src/experience.js",
+    "src/launch.js",
+    "src/reader.js",
+    "src/storage.js",
+    "styles.css",
+    "sw.js"
+  ],
+  "runtimeSha256": {
+    "assets/icon-192.png": "2f41d2764104a99209f407b90cecb3fa68c9de599f8e2b1001c2961ee12e4fa8",
+    "assets/icon-512.png": "7fe3b297cc165f27481e24b8b678937b73035ff63bfdd88a8954dc9c41f51e1b",
+    "assets/icon.svg": "6764ee5b01615e75743a92ed8e45bd099fc7246b9a4d71bc1ac484509abecd68",
+    "index.html": "901b2b974637a71f1f7dc49b89520fc6c0433373bdab7161b6673ea1a69aa30e",
+    "manifest.webmanifest": "f397150aab6818cef15b3dff6e9d539d2ed3cf1e1ecb4e6ea86b9c9c682df6f6",
+    "src/app.js": "ec4fa97ab9a1869de7451b4ecb362abe2ccdd957d5f5f5e83cd54dfd2d588aab",
+    "src/carrier.js": "08df62d5d260ed9ed5657f39d3ab14585dd355ff085e898063bd4d4adc66f0a3",
+    "src/core.js": "14a194de68edc0dbea5afd1e939c6b39fa2b17fa243ed3e6a1c8c567f2ce56f6",
+    "src/desk-view.js": "1b1a0ca9e80bfad8dc84551bfefe2e30be86e5040f3fc01c4050c47ac951674a",
+    "src/experience.js": "7f45b90c6dab0bb2e4d5020613d7a136472f6fffcb935d2e345fcf819b38d871",
+    "src/launch.js": "0c628d5f87e31389bb8be1d95a8db83af1ac21e5bd1d47207e83834d69512f8d",
+    "src/reader.js": "886ee9328ee8cdbba16319b29492d527410fa25e24275af8bf742f9d97c0f872",
+    "src/storage.js": "b6d11fd5fe0953f1c330c27a853b4b78f6edddd58f683ae5802218f753fbb756",
+    "styles.css": "2f31f5cead09f971603671dac9f7daba5fd3fd14bdc44685ca95ba40de8a80ca",
+    "sw.js": "f12f41c8eaee5919e9dbc6c1d586344a4d1fc800a39810c7e9628a2fe32d130c"
+  },
+  "priorReleaseChecks": {
+    "automatedPassed": 117,
+    "compatibilityPassed": 27,
+    "rerunForPackaging": false
+  },
+  "browserRunForPackaging": false,
+  "browserStatus": "Current release remains 0 passed, 0 failed, 41 not run; earlier user-reported v1.2 acceptance is retained separately.",
+  "userMailIncluded": false,
+  "webDeploymentFiles": 17,
+  "extractedWebParityCommand": "Verified web/: 15 runtime files, license, and static-host marker (17 files).\nUpload the contents of web/ to the intended HTTPS app folder. No server-side build or package install is needed.",
+  "syntax": {
+    "javascriptFilesPassed": 27,
+    "pythonFilesPassed": 3
+  },
+  "localAssetAndModuleReferences": "passed",
+  "manifestRelativeScope": "passed",
+  "webRootHTTP": {
+    "entryPassed": true,
+    "runtimeFilesPassed": 15,
+    "developmentPathsAbsent": 4,
+    "command": "python3 serve.py --web --port <local test port>"
+  },
+  "nestedFolderHTTP": {
+    "path": "/club/sneakernet/",
+    "entryPassed": true,
+    "runtimeFilesPassed": 15
+  },
+  "zipIntegrity": "passed",
+  "sourceAndWebRuntimeMatchDeliveredBaseline": true,
+  "verificationLimit": "Static HTTP and file/syntax verification only. No browser, service-worker installation, IndexedDB, mobile controls, hosted public deployment, or GitHub workflow was executed for this repackaging."
+}

@@ -1,0 +1,34 @@
+{
+  "suite": "Previous-release Node protocol compatibility",
+  "browserAcceptance": false,
+  "previousAppVersion": "1.2.0",
+  "currentAppVersion": "1.3.0-rc.1",
+  "previousBackupVersion": 2,
+  "currentDeskSchema": 3,
+  "checks": [
+    {
+      "name": "Previous release accepts a newly packed current public bag",
+      "status": "passed"
+    },
+    {
+      "name": "Previous-release reply returns to one current thread",
+      "status": "passed"
+    },
+    {
+      "name": "Exact original re-download is a no-op in the previous recipient",
+      "status": "passed"
+    },
+    {
+      "name": "Actual previous backup migrates without losing prior desk fields",
+      "status": "passed"
+    },
+    {
+      "name": "Current repacking of the completed thread still opens in the previous release",
+      "status": "passed"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0
+  }
+}

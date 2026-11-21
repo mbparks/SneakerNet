@@ -1,0 +1,12 @@
+NOT RUN: browser launch failed. No browser acceptance checks passed.
+browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     npx playwright install                                 ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+Results: /workspace/scratch/ffa40384480d/sneakernet-social-club/qa-results/v1.2.0-rc.1-current/results.json
+NOT-RUN: 0 passed, 0 failed, 27 not run.

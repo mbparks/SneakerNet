@@ -1,0 +1,6 @@
+NOT RUN: Required default Playwright Chromium headless-shell executable is unavailable: /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell
+Read-only availability check only. No browser process, page, or installation context started.
+No alternative executable, installation, workaround, or escalation was attempted.
+Prepared suite SHA256: aca1b21f059e9128a564f401cf2ee193d1558ca751f7ecf1075537cc3e712a29
+Results: /workspace/scratch/ffa40384480d/sneakernet-social-club/qa-results/1.4.0-rc.1-current/results.json
+NOT-RUN: 0 passed, 0 failed, 36 not run.

@@ -1,0 +1,75 @@
+Executed from the extracted v1.2.0 ZIP. These are Node model/simulation checks, not browser acceptance.
+
+
+> sneakernet-social-club@1.2.0 test
+> node --test tests/core.test.mjs tests/desk-features.test.mjs tests/offline-shell.test.mjs tests/storage.test.mjs tests/experience.test.mjs
+
+✔ three stations carry Cumberland mail out and a DEF CON reply home (48.900218ms)
+✔ reply before parent survives, can itself be exported, and reconnects when parent arrives (8.668178ms)
+✔ two returning copies retain two known paths and do not invent a merged journey (30.246982ms)
+✔ handoff order survives disagreeing clocks (4.639281ms)
+✔ full desk backup restores private drafts, choices, identity, paths, and replay receipts (7.860094ms)
+✔ mailbags contain public selection only; preparation leaves the desk untouched (3.072209ms)
+✔ damaged, unsupported, hidden-field, and unsafe-property input is atomic (4.291117ms)
+✔ a reused bag ID with changed contents is rejected; JSON formatting is harmless (7.260417ms)
+✔ conflicting message identity is rejected before any desk data changes (5.031524ms)
+✔ postmark collisions and causal splicing are rejected (8.7149ms)
+✔ a cycle created only by joining two otherwise valid partial desks is rejected (2.189401ms)
+✔ an unseen original bag preserves a direct shortcut after a longer route arrived (14.802925ms)
+✔ empty starts, handle requirements, duplicate IDs, and format mixups are explicit (2.847283ms)
+✔ 1,850 full postcards export compact text that reopens even when pretty JSON exceeds 5 MiB (1225.999718ms)
+✔ mailbag limit measures exact UTF-8 bytes including the exported newline (872.85349ms)
+✔ every accepted desk has a reopenable full backup; oversized multibyte draft commits fail safely (1405.837648ms)
+✔ a fresh schema-2 desk has exactly the private local contract and no sample history (8.163842ms)
+✔ schema-1 migration preserves every legacy value and marks existing mail read (23.69374ms)
+✔ version-1 full backups restore through migration; version-2 backups round-trip all private notes (6.378499ms)
+✔ new authored mail is read and imported mail is unread; handles never determine identity (10.09198ms)
+✔ new-replies facts include participated and explicitly followed threads, excluding own replies (8.141738ms)
+✔ bookmarks, archive and follow flags move with orphan threads when missing parents arrive (8.132813ms)
+✔ new paths create an arrival without changing known-message read state, and replay is a strict no-op (12.423138ms)
+✔ arrival order follows acceptance even when the clock moves backwards (28.00241ms)
+✔ recent arrivals stop at 100 without losing mail, paths, or the older replay receipts (1341.333952ms)
+✔ arrival reference bound prunes whole summaries while preserving all causal receipts (4542.20546ms)
+✔ all private feature state stays out of public mailbags and is retained in full backups (3.695898ms)
+✔ draft and private-note validation rejects malformed input without mutating the desk (1.585168ms)
+✔ simulated Mail Call summary and local arrival history leave unread mail unread (48.805353ms)
+✔ simulated Mail Call opens new reply first, preserves receipt markers, and marks only explicitly opened mail (5.577736ms)
+✔ simulated Mail Call gives useful feedback when a read marker cannot be saved (5.116146ms)
+✔ simulated album groups repeated marks by actual station, handle, and label and links associated postcards (7.447227ms)
+✔ simulated keepsake prints both sides of every public postcard, retains distinct branches, and excludes private desk data (25.393493ms)
+✔ simulated print failure removes the temporary print tree and preserves the preview (8.751166ms)
+✔ simulated experience empty states contain no sample postcards or read actions (1.057648ms)
+Node service-worker event/cache simulation using actual release bytes. NOT browser offline acceptance.
+✔ [Node SW simulation] successful install caches every actual runtime file and activates only after success (24.063556ms)
+✔ [Node SW simulation] any one missing required asset rejects atomic installation (59.618939ms)
+✔ [Node SW simulation] activation removes only stale shell versions in this installation scope (3.760206ms)
+✔ [Node SW simulation] readiness requires every required resource, including after eviction (5.12801ms)
+✔ [Node SW simulation] a connected readiness query repairs every missing allowlisted asset with exact bytes (5.579459ms)
+✔ [Node SW simulation] a failed repair cannot claim readiness or leave a partially repaired batch (4.759246ms)
+✔ [Node SW simulation] successful missing-asset and shell fetches repair canonical cache entries (9.028143ms)
+✔ [Node SW simulation] an unsuccessful missing-asset fetch is never cached as a valid asset (3.34421ms)
+✔ [Node SW simulation] root and subpath navigation reopen the exact app shell while disconnected (8.226643ms)
+✔ [Node SW simulation] every cached module, CSS, icon, and manifest returns actual bytes offline (5.005614ms)
+✔ [Node SW simulation] unrelated URLs and user mail are neither intercepted nor cached (4.577049ms)
+✔ [Node SW simulation] eviction cannot produce a false successful offline resource response (9.800108ms)
+Node IndexedDB transaction simulation. NOT browser storage acceptance.
+✔ [Node storage simulation] draft patch changes only drafts, increments revision, and broadcasts after commit (7.286054ms)
+✔ [Node storage simulation] stale draft cannot overwrite a whole-desk update (3.34956ms)
+✔ [Node storage simulation] simultaneous patches with the same revision permit exactly one commit (6.48542ms)
+✔ [Node storage simulation] quota failure preserves saved mail and allows retry with the same revision (3.20763ms)
+✔ [Node storage simulation] whole-desk update cannot overwrite a successfully patched draft at a stale revision (3.319087ms)
+✔ [Node storage simulation] invalid draft shapes, IDs, controls, and lengths never start a write (2.745674ms)
+✔ [Node storage simulation] draft patch refuses an empty or unmigrated desk until a full schema-2 save (3.769388ms)
+✔ [Node storage simulation] corrupt storage record cannot be replaced by a draft patch (2.85213ms)
+✔ [Node storage simulation] invalid and exhausted revisions leave storage untouched (4.720383ms)
+✔ [Node storage simulation] other tabs receive committed draft revision and unsubscribe stops callbacks (4.442585ms)
+✔ [Node storage simulation] a failed full save also preserves the prior snapshot and revision (3.176688ms)
+ℹ tests 58
+ℹ suites 0
+ℹ pass 58
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6166.726052
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.

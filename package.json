@@ -1,0 +1,25 @@
+{
+  "name": "sneakernet-social-club",
+  "version": "1.5.0-rc.1",
+  "private": true,
+  "type": "module",
+  "description": "A local-first bulletin board whose messages travel in portable mailbags.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs tests/desk-features.test.mjs tests/carrier-model.test.mjs tests/offline-shell.test.mjs tests/storage.test.mjs tests/experience.test.mjs tests/carrier-view.test.mjs tests/large-desk.test.mjs tests/desk-view.test.mjs tests/reading-model.test.mjs tests/reader-view.test.mjs tests/controller-reading.test.mjs",
+    "test:browser": "node tests/browser.acceptance.mjs",
+    "serve": "python3 serve.py",
+    "serve:web": "python3 serve.py --web",
+    "build:web": "node scripts/package-web.mjs",
+    "check:web": "node scripts/package-web.mjs --check",
+    "sample": "node scripts/make-sample.mjs",
+    "check:offline": "node scripts/refresh-shell-integrity.mjs --check",
+    "refresh:offline": "node scripts/refresh-shell-integrity.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

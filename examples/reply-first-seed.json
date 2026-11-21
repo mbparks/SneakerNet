@@ -1,0 +1,54 @@
+{
+  "format": "sneakernet-social-club/mailbag",
+  "version": 1,
+  "id": "bag_d4d92a61-09ca-40f8-8c46-b81d7c682267",
+  "packedAt": "2026-11-21T05:49:06.730Z",
+  "messages": [
+    {
+      "id": "msg_0ee55a74-703d-4fec-8f5b-9fa9b8ff71d4",
+      "parentId": "msg_4eb86a98-54a8-42bc-8339-435e263f0964",
+      "handle": "sample-defcon",
+      "body": "I have a spare in the parts bin. Sending this fictional reply home from DEF CON. Turn the postcards over to inspect their separate journeys.",
+      "createdAt": "2026-11-21T05:49:06.727Z"
+    }
+  ],
+  "routes": [
+    {
+      "messageId": "msg_0ee55a74-703d-4fec-8f5b-9fa9b8ff71d4",
+      "path": [
+        {
+          "id": "mark_2b523ada-250d-4eb3-a788-1e9fd7f0fd33",
+          "stationId": "station_3180b3e9-f23c-44b1-b0dd-dac20b94ae99",
+          "handle": "sample-defcon",
+          "postmark": "Example · DEF CON",
+          "kind": "written",
+          "at": "2026-11-21T05:49:06.727Z"
+        },
+        {
+          "id": "mark_65669025-ef6d-446d-8445-cfe5cf67b60a",
+          "stationId": "station_3180b3e9-f23c-44b1-b0dd-dac20b94ae99",
+          "handle": "sample-defcon",
+          "postmark": "Example · DEF CON",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.728Z"
+        },
+        {
+          "id": "mark_9f03e82f-356c-433e-9339-0093154af39e",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "received",
+          "at": "2026-11-21T05:49:06.729Z"
+        },
+        {
+          "id": "mark_acb0f59c-b292-412b-a449-a1d42083afc4",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.730Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "suite": "Sneakernet Social Club actual-browser acceptance",
+  "appVersion": "1.2.0-rc.1",
+  "startedAt": "2026-11-21T17:02:41.959Z",
+  "status": "not-run",
+  "browser": {
+    "engine": "chromium",
+    "headless": true
+  },
+  "host": {
+    "platform": "linux",
+    "node": "v24.22.3"
+  },
+  "limitations": [
+    "Mobile checks use emulated touch viewports, not physical Android or iOS devices.",
+    "Chromium mobile emulation is not evidence of Safari behavior; an optional WebKit run is a separate engine check.",
+    "File choosers and downloads are automated browser controls. USB sticks, AirDrop, and operating-system share sheets are not exercised.",
+    "Screenshots are captured for human review; an automated overflow check is not a full visual or assistive-technology audit.",
+    "Print checks inspect the public keepsake DOM and print controls; no physical printer or system print dialog is exercised."
+  ],
+  "installations": [],
+  "checks": [
+    {
+      "name": "Cold empty desks and isolated practice delivery",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Three independent station identities",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Offline reopen with the static server stopped",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "A writes in Cumberland; draft autosaves privately",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "A exports a reviewed file; B previews before accepting",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "B carries the actual exported file to C",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "C replies; B brings the actual return file to A",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "A sees one two-message thread and ordered postmarks",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Repeated import preserves every message and postmark",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "An unseen shorter route remains a distinct known path",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Two branches return without a fictional combined journey",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Reply-first exported file reconnects when its parent arrives",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Full-desk backup restores identity, drafts, settings, and receipts",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Damaged file preserves the working desk",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Desktop day, night, and high-contrast persistence and screenshots",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Keyboard Tab, Enter, Escape, and posting shortcut",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "390px touch layout: import, reply, pack, reopen, all color modes",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "320px touch layout: write, import, pack, and overflow check",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "No uncaught application errors",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Mail call separates receipt from reading and remembers unread replies",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Inbox filters distinguish own, unread, carrying, waiting, and new replies",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Bookmarks, following, and archive state stay private and survive reopen",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Private drafts shelf resumes and clears post and reply drafts",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Backup status and legacy version-1 restore preserve the complete desk",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Recent arrival history ignores repeated imports and keeps received summaries",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Postmark album groups participant stations while retaining separate paths",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    },
+    {
+      "name": "Printable keepsake contains only public fronts and distinct postcard backs",
+      "status": "not-run",
+      "reason": "Suite stopped before this check."
+    }
+  ],
+  "artifacts": [],
+  "pageErrors": [],
+  "blocker": {
+    "phase": "browser launch",
+    "message": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝",
+    "error": "browserType.launch: Executable doesn't exist at /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝\n    at main (/workspace/scratch/ffa40384480d/sneakernet-social-club/tests/browser.acceptance.mjs:329:38)\n    at async file:///workspace/scratch/ffa40384480d/sneakernet-social-club/tests/browser.acceptance.mjs:813:3"
+  },
+  "finishedAt": "2026-11-21T17:02:42.607Z",
+  "summary": {
+    "pass": 0,
+    "fail": 0,
+    "not-run": 27
+  }
+}

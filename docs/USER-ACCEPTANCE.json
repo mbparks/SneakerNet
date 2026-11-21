@@ -1,0 +1,18 @@
+{
+  "recordType": "user-reported-browser-acceptance",
+  "recordedDate": "2026-11-21",
+  "acceptedCandidate": "1.2.0-rc.1",
+  "promotedRelease": "1.2.0",
+  "status": "passed",
+  "reportedBy": "Mike, in this project conversation",
+  "statement": "browser acceptance passed",
+  "scopeBasis": "User confirmation following the delivered v1.2.0-rc.1 browser acceptance gate.",
+  "rawRunArtifactsProvided": false,
+  "automatedCheckCounts": null,
+  "browserAndOS": null,
+  "desktopAndViewportDetails": null,
+  "physicalPhoneCoverage": "not specified",
+  "nativePrintCoverage": "not specified",
+  "localHistoricalRun": "BROWSER-RESULTS.json",
+  "note": "The user report clears the release gate. It does not rewrite the historical local not-run result or establish an unreported browser/device matrix."
+}

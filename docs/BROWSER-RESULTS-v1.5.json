@@ -1,0 +1,243 @@
+{
+  "suite": "Sneakernet Social Club actual-browser acceptance",
+  "appVersion": "1.5.0-rc.1",
+  "startedAt": "2026-11-21T19:18:26.354Z",
+  "finishedAt": "2026-11-21T19:18:27.012Z",
+  "status": "not-run",
+  "browser": {
+    "engine": "chromium",
+    "headless": true,
+    "executablePath": "/home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell"
+  },
+  "host": {
+    "platform": "linux",
+    "node": "v24.22.3"
+  },
+  "suiteSha256": "1f0afc77f76575f4a609ae3df239c4f5150bb23769174cf563aac09a57ac16e6",
+  "plannedInstallations": 16,
+  "limitations": [
+    "Current v1.5 browser flows were not exercised; this result does not alter the user-reported v1.2 browser acceptance.",
+    "The prepared suite has 16 isolated contexts and 41 checks, including long-thread reading and 390px and 320px emulated touch paths.",
+    "No physical phone, OS sharing, native printing, browser page, or installation context was exercised."
+  ],
+  "installations": [],
+  "checks": [
+    {
+      "name": "Cold empty desks and isolated practice delivery",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Three independent station identities",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Offline reopen with the static server stopped",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "A writes in Cumberland; draft autosaves privately",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "A exports a reviewed file; B previews before accepting",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "B carries the actual exported file to C",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "C replies; B brings the actual return file to A",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "A sees one two-message thread and ordered postmarks",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Repeated import preserves every message and postmark",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "An unseen shorter route remains a distinct known path",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Two branches return without a fictional combined journey",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Reply-first exported file reconnects when its parent arrives",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Full-desk backup restores identity, drafts, settings, and receipts",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Damaged file preserves the working desk",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Desktop day, night, and high-contrast persistence and screenshots",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Keyboard Tab, Enter, Escape, and posting shortcut",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "390px touch layout: import, reply, pack, reopen, all color modes",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "320px touch layout: write, import, pack, and overflow check",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "No uncaught application errors",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Mail call separates receipt from reading and remembers unread replies",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Inbox filters distinguish own, unread, carrying, waiting, and new replies",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Bookmarks, following, and archive state stay private and survive reopen",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Private drafts shelf resumes and clears post and reply drafts",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Backup status and legacy version-1 restore preserve the complete desk",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Recent arrival history ignores repeated imports and keeps received summaries",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Postmark album groups participant stations while retaining separate paths",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Printable keepsake contains only public fronts and distinct postcard backs",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Fresh and imported desks have no invented packed-bag history",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Packing records a private receipt matching the reviewed public bag",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Download same bag preserves exact bytes, outbox, and postcard paths",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "New replies change packing choices and receipt repacking includes current threads",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Outbox receipts restore with current backups and migrate schema-2 desks safely",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Larger offline exports preserve all pages of packing choices and the complete manifest",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Board pages and search retain hidden carry choices without silently marking mail read",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Desk capacity matches the actual full-desk backup and larger restores preserve all mail",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "320px and 390px touch paths navigate larger desks, packing choices, and capacity",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Long conversations use actual offline exports and mark only the explicitly opened page read",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "First-unread navigation and offline reopen retain a private message-based reading position",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Reply-parent navigation crosses reader pages and returns to the originating postcard",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Reading positions survive full restore, remain private, and reconnect when an orphan gains its parent",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    },
+    {
+      "name": "Long-thread reading works through keyboard controls and 320px and 390px touch paths",
+      "status": "not-run",
+      "reason": "Required browser executable unavailable at preflight; no browser process started."
+    }
+  ],
+  "artifacts": [],
+  "pageErrors": [],
+  "blocker": {
+    "phase": "read-only browser availability check",
+    "code": "ENOENT",
+    "message": "Required default Playwright Chromium headless-shell executable is unavailable: /home/agent/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell"
+  },
+  "summary": {
+    "pass": 0,
+    "fail": 0,
+    "not-run": 41
+  }
+}

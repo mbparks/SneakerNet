@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#214c39">
+  <meta name="description" content="A local bulletin board whose messages travel in people's pockets. Write a postcard, carry a mailbag, and see where the conversation goes.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Sneakernet Social Club · Green Shoe Garage</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="src/launch.js"></script>
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the mail desk</a>
+  <div class="workbench">
+    <header class="masthead">
+      <div class="club-identity">
+        <div class="club-emblem" aria-hidden="true"><img src="assets/icon.svg" alt="" width="64" height="64"></div>
+        <div>
+          <p class="eyebrow brand-line">Green Shoe Garage <span>Field Instrument</span></p>
+          <h1>Sneakernet <span>Social Club</span></h1>
+        </div>
+      </div>
+      <div class="desk-controls">
+        <label class="theme-control" for="theme-select"><span>Paper &amp; ink</span>
+          <select id="theme-select" aria-label="Color mode">
+            <option value="day">Day</option>
+            <option value="night">Night</option>
+            <option value="contrast">High contrast</option>
+          </select>
+        </label>
+        <button id="tools-button" class="button quiet" type="button"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14M7 3v4m6 1v4m-6 1v4"/></svg>Desk tools</button>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="dispatch-counter" aria-labelledby="desk-heading">
+        <div class="counter-intro">
+          <p class="eyebrow">The mail desk</p>
+          <h2 id="desk-heading">Messages travel in people’s pockets.</h2>
+          <p>Leave a note. Carry a conversation. See what comes back.</p>
+        </div>
+        <div class="primary-actions">
+          <button id="write-button" class="button primary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5 4 4M5 19l4-1L20 7a2.1 2.1 0 0 0-3-3L6 15l-1 4ZM4 22h16"/></svg>Write a postcard</button>
+          <button id="open-button" class="button secondary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16v11H4zM8 9V6a4 4 0 0 1 8 0v3M4 12l8 4 8-4"/></svg>Open a mailbag</button>
+        </div>
+      </section>
+
+      <section class="station-strip" aria-label="Your station and desk status">
+        <button id="station-button" class="station-button" type="button">
+          <span class="station-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 13V7a4 4 0 1 1 8 0v6m-8-3h8M5 13h14v5H5zM3 21h18"/></svg></span>
+          <span><span class="eyebrow">Your station</span><span id="station-summary">Choose a handle &amp; postmark</span></span>
+          <svg class="station-edit" viewBox="0 0 20 20" aria-hidden="true"><path d="m4 16 1-4L14 3l3 3-9 9-4 1Zm8-11 3 3"/></svg>
+        </button>
+        <div class="desk-status">
+          <span id="save-status" class="status-line" role="status">Opening your desk…</span>
+          <span id="offline-status" class="status-line">Checking offline setup…</span>
+        </div>
+      </section>
+
+      <nav class="desk-utilities" aria-label="More from your mail desk">
+        <div class="desk-utility-actions">
+          <button id="arrivals-button" class="button quiet" type="button" disabled>Recent arrivals</button>
+          <button id="outbox-button" class="button quiet" type="button" disabled>Outbox</button>
+          <button id="album-button" class="button quiet" type="button" disabled>Postmark album</button>
+          <button id="drafts-button" class="button quiet" type="button" disabled>Drafts</button>
+        </div>
+        <p id="backup-summary" class="hint">No full-desk backup recorded yet</p>
+      </nav>
+
+      <div id="notice" aria-live="polite" hidden></div>
+
+      <div class="desk-layout">
+        <section class="mail-tray" aria-labelledby="tray-heading">
+          <div class="tray-heading section-heading">
+            <div><p class="eyebrow">On your desk</p><h2 id="tray-heading">The bulletin board</h2></div>
+            <span class="tray-label" aria-hidden="true">LOCAL MAIL</span>
+          </div>
+          <div class="find-field"><label for="search">Find a thread</label><div class="search-wrap"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg><input id="search" type="search" autocomplete="off" placeholder="Search words or handles"></div></div>
+          <div class="view-field"><label for="view-filter">Show threads</label><select id="view-filter">
+            <option value="inbox">On the desk</option>
+            <option value="unread">Unread</option>
+            <option value="replies">New replies</option>
+            <option value="mine">My postcards</option>
+            <option value="carrying">Carrying</option>
+            <option value="waiting">Waiting for parent</option>
+            <option value="bookmarked">Bookmarked</option>
+            <option value="archived">Archived</option>
+            <option value="all">All mail</option>
+          </select></div>
+          <div id="board" class="board-list">
+            <div class="empty-state"><p class="empty-title">A clean desk.</p><p>Your postcards and incoming conversations will land here.</p></div>
+          </div>
+          <div class="carry-shelf">
+            <div><span class="eyebrow">Outgoing pocket</span><p id="carry-count">No threads selected</p></div>
+            <button id="pack-button" class="button secondary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10l-2 5 5 12H4L9 8 7 3ZM8 8h8m-6 5h4m-2-2v4"/></svg>Pack mailbag</button>
+          </div>
+        </section>
+
+        <section id="reader" class="reading-desk" aria-label="Open postcard">
+          <div class="empty-reader">
+            <div class="blank-postcard" aria-hidden="true"><span class="blank-card-label">POST CARD</span><span class="blank-stamp">SSC<br>BY HAND</span><span class="blank-address"></span><span class="blank-message"></span></div>
+            <p class="eyebrow">Delivered by people</p>
+            <h2>A small note.<br>A long way to travel.</h2>
+            <p>Write your first postcard or open a mailbag someone gave you. Every conversation starts somewhere.</p>
+          </div>
+        </section>
+      </div>
+
+      <aside class="practice-strip" aria-label="Practice delivery">
+        <div><span class="practice-badge" aria-hidden="true">TRIAL RUN</span><p><strong>Wondering how it travels?</strong> Follow a postcard out and a reply home.</p></div>
+        <button id="try-button" class="button quiet" type="button">Try a delivery <span aria-hidden="true">↗</span></button>
+      </aside>
+    </main>
+
+    <footer class="desk-footer"><p>No accounts. No central server. Just people carrying files.</p><p><a href="https://greenshoegarage.com" target="_blank" rel="noopener noreferrer">Green Shoe Garage</a><span class="footer-dot" aria-hidden="true">·</span><span>v1.5.0-rc.1</span></p></footer>
+  </div>
+
+  <dialog id="modal" aria-labelledby="modal-title">
+    <div class="modal-header"><div><p class="eyebrow">Sneakernet Social Club</p><h2 id="modal-title">The mail desk</h2></div><button id="modal-close" class="icon-button" type="button" aria-label="Close dialog"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+    <div id="modal-body" class="modal-body"></div>
+  </dialog>
+  <input id="mailbag-file" type="file" accept="application/json,.json" hidden>
+  <input id="backup-file" type="file" accept="application/json,.json" hidden>
+  <noscript><div class="noscript-notice">Sneakernet Social Club needs JavaScript to open and save your local mail desk. Nothing is sent to a server.</div></noscript>
+</body>
+</html>

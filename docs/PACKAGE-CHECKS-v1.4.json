@@ -1,0 +1,83 @@
+{
+  "version": "1.4.0-rc.1",
+  "zip_crc": "passed",
+  "local_browser_rendering": "not exercised; current result, historical carrier result, and user-reported v1.2 acceptance recorded separately",
+  "script_syntax_files": 22,
+  "python_syntax": {
+    "passed": 3
+  },
+  "html_asset_links": "all resolve",
+  "html_ids": "unique; all application static ID lookups resolve",
+  "json_files_parsed": 17,
+  "offline_integrity": "Offline checksums match all 13 runtime files.",
+  "example_mailbags": "3 validated by current protocol",
+  "versions": "package, core, visible HTML and worker agree",
+  "extracted_zip_node_tests": {
+    "passed": 93,
+    "failed": 0
+  },
+  "extracted_entry_http_files": 14,
+  "runtime_bytes_match_source": true,
+  "runtime_bytes_sha256": {
+    "index.html": "6cf39c08ae82aa00ed4584af9262a0cd499cf010802c02c3f0bf910435054e81",
+    "styles.css": "d71dc9c75fdf539ae2064bf3631aec4d95072929095601bbaf4c8e5b8aa077bd",
+    "src/app.js": "cbc44700d31298da6c172e11fe05cdc5014d4dbdb7b0e78e8efa10fad45d401f",
+    "src/core.js": "1079e0238008737e0f847a84c5f0825e03053d217ac3060d65fd3b0d4e42a1e6",
+    "src/storage.js": "2cfd01858de8e85d64ef76bd2f62731a23219e0e8ccc5700c449ce65ea95f295",
+    "src/experience.js": "7f45b90c6dab0bb2e4d5020613d7a136472f6fffcb935d2e345fcf819b38d871",
+    "src/carrier.js": "08df62d5d260ed9ed5657f39d3ab14585dd355ff085e898063bd4d4adc66f0a3",
+    "src/desk-view.js": "1b1a0ca9e80bfad8dc84551bfefe2e30be86e5040f3fc01c4050c47ac951674a",
+    "src/launch.js": "0c628d5f87e31389bb8be1d95a8db83af1ac21e5bd1d47207e83834d69512f8d",
+    "sw.js": "448b4c0ea37e31fdb4e1908cbf5127de23787ccf3bb4396fc799194730fe072b",
+    "manifest.webmanifest": "f397150aab6818cef15b3dff6e9d539d2ed3cf1e1ecb4e6ea86b9c9c682df6f6",
+    "assets/icon.svg": "6764ee5b01615e75743a92ed8e45bd099fc7246b9a4d71bc1ac484509abecd68",
+    "assets/icon-192.png": "2f41d2764104a99209f407b90cecb3fa68c9de599f8e2b1001c2961ee12e4fa8",
+    "assets/icon-512.png": "7fe3b297cc165f27481e24b8b678937b73035ff63bfdd88a8954dc9c41f51e1b"
+  },
+  "historical_local_browser_attempt": {
+    "app_version": "1.2.0-rc.1",
+    "pass": 0,
+    "fail": 0,
+    "not-run": 27
+  },
+  "baseline_user_reported_browser_acceptance": {
+    "recordType": "user-reported-browser-acceptance",
+    "recordedDate": "2026-11-21",
+    "acceptedCandidate": "1.2.0-rc.1",
+    "promotedRelease": "1.2.0",
+    "status": "passed",
+    "reportedBy": "Mike, in this project conversation",
+    "statement": "browser acceptance passed",
+    "scopeBasis": "User confirmation following the delivered v1.2.0-rc.1 browser acceptance gate.",
+    "rawRunArtifactsProvided": false,
+    "automatedCheckCounts": null,
+    "browserAndOS": null,
+    "desktopAndViewportDetails": null,
+    "physicalPhoneCoverage": "not specified",
+    "nativePrintCoverage": "not specified",
+    "localHistoricalRun": "BROWSER-RESULTS.json",
+    "note": "The user report clears the release gate. It does not rewrite the historical local not-run result or establish an unreported browser/device matrix."
+  },
+  "historical_carrier_browser": {
+    "pass": 0,
+    "fail": 0,
+    "not-run": 32
+  },
+  "current_browser": {
+    "pass": 0,
+    "fail": 0,
+    "not-run": 36
+  },
+  "previous_release_compatibility": {
+    "passed": 15,
+    "failed": 0
+  },
+  "performance_measurement": {
+    "file": "PERFORMANCE-RESULTS.json",
+    "currentAppVersion": "1.4.0-rc.1",
+    "fixtures": 3,
+    "samples_per_operation": 5,
+    "browser_timing": false
+  },
+  "browser_suite_sha256": "aca1b21f059e9128a564f401cf2ee193d1558ca751f7ecf1075537cc3e712a29"
+}

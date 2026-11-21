@@ -1,0 +1,38 @@
+{
+  "format": "sneakernet-social-club/mailbag",
+  "version": 1,
+  "id": "bag_2b71ee81-aef4-4229-bfe2-275a3690a830",
+  "packedAt": "2026-11-21T05:49:06.720Z",
+  "messages": [
+    {
+      "id": "msg_4eb86a98-54a8-42bc-8339-435e263f0964",
+      "parentId": null,
+      "handle": "sample-cumberland",
+      "body": "Who’s got a spare rotary encoder? This is a fictional example postcard.",
+      "createdAt": "2026-11-21T05:49:06.718Z"
+    }
+  ],
+  "routes": [
+    {
+      "messageId": "msg_4eb86a98-54a8-42bc-8339-435e263f0964",
+      "path": [
+        {
+          "id": "mark_9f499431-43c4-434c-8d74-9d7d29c688a3",
+          "stationId": "station_2baa0fe5-88d7-4c3d-9cf9-c45efff00355",
+          "handle": "sample-cumberland",
+          "postmark": "Example · Cumberland Maker Meetup",
+          "kind": "written",
+          "at": "2026-11-21T05:49:06.718Z"
+        },
+        {
+          "id": "mark_39de16a4-0b13-4e8d-b133-822f5c71d439",
+          "stationId": "station_2baa0fe5-88d7-4c3d-9cf9-c45efff00355",
+          "handle": "sample-cumberland",
+          "postmark": "Example · Cumberland Maker Meetup",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.720Z"
+        }
+      ]
+    }
+  ]
+}

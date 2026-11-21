@@ -1,0 +1,57 @@
+{
+  "version": "1.2.0",
+  "zip_crc": "passed",
+  "local_browser_rendering": "not exercised; user browser acceptance recorded separately",
+  "script_syntax_files": 13,
+  "python_syntax": "passed",
+  "html_asset_links": "all resolve",
+  "html_ids": "unique; all application static ID lookups resolve",
+  "json_files_parsed": 7,
+  "example_mailbags": "3 validated by current protocol",
+  "versions": "package, core, visible HTML and worker agree",
+  "extracted_zip_node_tests": {
+    "passed": 58,
+    "failed": 0
+  },
+  "extracted_entry_http_files": 12,
+  "runtime_bytes_match_source": true,
+  "promotion_scope": "Runtime/configuration files verified equal to accepted v1.2.0-rc.1 after release-version normalization; no behavior or format change.",
+  "runtime_bytes_sha256": {
+    "index.html": "a13e0e5e0fcf98d7145470e490ebea243740e3d21254c685c7849003c8151b7d",
+    "styles.css": "4b35499e35cff9a6bbf1687426ee473239d6da75f182f03e8daf534f64524de7",
+    "src/app.js": "4d30cefbc8838ae0f3ee7b6146709b2e076923f5653d7c85586b25a249f9776b",
+    "src/core.js": "018890c779a3e5c58287c7b5d04bfbd9b7e43c2b153148ab7b70b93a392c2d78",
+    "src/storage.js": "e5e3f8034184237877ae6610296c36039a64b51850c83d05f81d133132c19108",
+    "src/experience.js": "7f45b90c6dab0bb2e4d5020613d7a136472f6fffcb935d2e345fcf819b38d871",
+    "src/launch.js": "0c628d5f87e31389bb8be1d95a8db83af1ac21e5bd1d47207e83834d69512f8d",
+    "sw.js": "0378a3feb1e72da4b9b249f638bdda3226ae237c2a95e3ec9fa36d05906be6df",
+    "manifest.webmanifest": "f397150aab6818cef15b3dff6e9d539d2ed3cf1e1ecb4e6ea86b9c9c682df6f6",
+    "assets/icon.svg": "6764ee5b01615e75743a92ed8e45bd099fc7246b9a4d71bc1ac484509abecd68",
+    "assets/icon-192.png": "2f41d2764104a99209f407b90cecb3fa68c9de599f8e2b1001c2961ee12e4fa8",
+    "assets/icon-512.png": "7fe3b297cc165f27481e24b8b678937b73035ff63bfdd88a8954dc9c41f51e1b"
+  },
+  "historical_local_browser_attempt": {
+    "app_version": "1.2.0-rc.1",
+    "pass": 0,
+    "fail": 0,
+    "not-run": 27
+  },
+  "user_reported_browser_acceptance": {
+    "recordType": "user-reported-browser-acceptance",
+    "recordedDate": "2026-11-21",
+    "acceptedCandidate": "1.2.0-rc.1",
+    "promotedRelease": "1.2.0",
+    "status": "passed",
+    "reportedBy": "Mike, in this project conversation",
+    "statement": "browser acceptance passed",
+    "scopeBasis": "User confirmation following the delivered v1.2.0-rc.1 browser acceptance gate.",
+    "rawRunArtifactsProvided": false,
+    "automatedCheckCounts": null,
+    "browserAndOS": null,
+    "desktopAndViewportDetails": null,
+    "physicalPhoneCoverage": "not specified",
+    "nativePrintCoverage": "not specified",
+    "localHistoricalRun": "BROWSER-RESULTS.json",
+    "note": "The user report clears the release gate. It does not rewrite the historical local not-run result or establish an unreported browser/device matrix."
+  }
+}

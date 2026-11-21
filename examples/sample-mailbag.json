@@ -1,0 +1,130 @@
+{
+  "format": "sneakernet-social-club/mailbag",
+  "version": 1,
+  "id": "bag_443f621a-0ed7-4d8c-9bb4-93c1e203e6be",
+  "packedAt": "2026-11-21T05:49:06.730Z",
+  "messages": [
+    {
+      "id": "msg_0ee55a74-703d-4fec-8f5b-9fa9b8ff71d4",
+      "parentId": "msg_4eb86a98-54a8-42bc-8339-435e263f0964",
+      "handle": "sample-defcon",
+      "body": "I have a spare in the parts bin. Sending this fictional reply home from DEF CON. Turn the postcards over to inspect their separate journeys.",
+      "createdAt": "2026-11-21T05:49:06.727Z"
+    },
+    {
+      "id": "msg_4eb86a98-54a8-42bc-8339-435e263f0964",
+      "parentId": null,
+      "handle": "sample-cumberland",
+      "body": "Who’s got a spare rotary encoder? This is a fictional example postcard.",
+      "createdAt": "2026-11-21T05:49:06.718Z"
+    }
+  ],
+  "routes": [
+    {
+      "messageId": "msg_0ee55a74-703d-4fec-8f5b-9fa9b8ff71d4",
+      "path": [
+        {
+          "id": "mark_2b523ada-250d-4eb3-a788-1e9fd7f0fd33",
+          "stationId": "station_3180b3e9-f23c-44b1-b0dd-dac20b94ae99",
+          "handle": "sample-defcon",
+          "postmark": "Example · DEF CON",
+          "kind": "written",
+          "at": "2026-11-21T05:49:06.727Z"
+        },
+        {
+          "id": "mark_65669025-ef6d-446d-8445-cfe5cf67b60a",
+          "stationId": "station_3180b3e9-f23c-44b1-b0dd-dac20b94ae99",
+          "handle": "sample-defcon",
+          "postmark": "Example · DEF CON",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.728Z"
+        },
+        {
+          "id": "mark_9f03e82f-356c-433e-9339-0093154af39e",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "received",
+          "at": "2026-11-21T05:49:06.729Z"
+        },
+        {
+          "id": "mark_acb0f59c-b292-412b-a449-a1d42083afc4",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.730Z"
+        }
+      ]
+    },
+    {
+      "messageId": "msg_4eb86a98-54a8-42bc-8339-435e263f0964",
+      "path": [
+        {
+          "id": "mark_9f499431-43c4-434c-8d74-9d7d29c688a3",
+          "stationId": "station_2baa0fe5-88d7-4c3d-9cf9-c45efff00355",
+          "handle": "sample-cumberland",
+          "postmark": "Example · Cumberland Maker Meetup",
+          "kind": "written",
+          "at": "2026-11-21T05:49:06.718Z"
+        },
+        {
+          "id": "mark_39de16a4-0b13-4e8d-b133-822f5c71d439",
+          "stationId": "station_2baa0fe5-88d7-4c3d-9cf9-c45efff00355",
+          "handle": "sample-cumberland",
+          "postmark": "Example · Cumberland Maker Meetup",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.720Z"
+        },
+        {
+          "id": "mark_667ea9dd-88fd-44f3-99dd-0c907c80c802",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "received",
+          "at": "2026-11-21T05:49:06.724Z"
+        },
+        {
+          "id": "mark_d863b310-dd04-4c98-a7da-39262b536621",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.724Z"
+        },
+        {
+          "id": "mark_5283fc12-691a-4aec-842c-132f43ddedf4",
+          "stationId": "station_3180b3e9-f23c-44b1-b0dd-dac20b94ae99",
+          "handle": "sample-defcon",
+          "postmark": "Example · DEF CON",
+          "kind": "received",
+          "at": "2026-11-21T05:49:06.727Z"
+        },
+        {
+          "id": "mark_c524ce8b-f35f-4caa-81aa-f95b133cde68",
+          "stationId": "station_3180b3e9-f23c-44b1-b0dd-dac20b94ae99",
+          "handle": "sample-defcon",
+          "postmark": "Example · DEF CON",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.728Z"
+        },
+        {
+          "id": "mark_a5fe4fc4-cf4d-420f-aca9-17a35ee7796e",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "received",
+          "at": "2026-11-21T05:49:06.729Z"
+        },
+        {
+          "id": "mark_1a537b24-b9cc-4903-8482-7189ea1dc3e5",
+          "stationId": "station_841f8347-fa51-4418-81ac-4a154d209d97",
+          "handle": "sample-carrier",
+          "postmark": "Example · Hamfest swap table",
+          "kind": "packed",
+          "at": "2026-11-21T05:49:06.730Z"
+        }
+      ]
+    }
+  ]
+}

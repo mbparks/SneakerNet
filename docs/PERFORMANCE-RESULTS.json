@@ -1,0 +1,566 @@
+{
+  "suite": "Large-desk Node model comparison",
+  "browserAcceptance": false,
+  "previousAppVersion": "1.4.0-rc.1",
+  "currentAppVersion": "1.5.0-rc.1",
+  "environment": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "INTEL(R) XEON(R) PLATINUM 8573C"
+  },
+  "method": {
+    "fixtures": "Deterministic fictional data; full validation before timing; prior desk and restored backup normalized through current migration for semantic equality outside timing",
+    "warmupsPerOperation": 2,
+    "samplesPerOperation": 5,
+    "summary": "Median wall time; alternating release order",
+    "boardAndPacking": "Includes building a new shared index per snapshot in current release",
+    "search": "Current release reuses snapshot index as the app does while typing",
+    "boundaryChecks": "Separate automated tests cover 2,000 messages, 4,000 paths, and 20,000 path steps together",
+    "limitations": "No DOM, IndexedDB, file picker, service worker, phone, or browser timing. Host load and garbage collection affect wall times; no timing assertions."
+  },
+  "fixtures": [
+    {
+      "name": "club-desk",
+      "threads": 50,
+      "messages": 100,
+      "routes": 200,
+      "totalSteps": 800,
+      "longestPath": 4,
+      "receivedBags": 0,
+      "backupBytes": 257529,
+      "arrivals": 0,
+      "outbox": 10,
+      "measurements": [
+        {
+          "operation": "validate desk",
+          "previousMedianMs": 9.748,
+          "currentMedianMs": 7.72,
+          "speedup": 1.263,
+          "previousSamplesMs": [
+            10.203,
+            9.748,
+            7.844,
+            6.914,
+            10.974
+          ],
+          "currentSamplesMs": [
+            9.858,
+            10.686,
+            6.405,
+            7.72,
+            6.883
+          ]
+        },
+        {
+          "operation": "build board facts",
+          "previousMedianMs": 0.248,
+          "currentMedianMs": 0.301,
+          "speedup": 0.824,
+          "previousSamplesMs": [
+            0.478,
+            0.263,
+            0.248,
+            0.207,
+            0.233
+          ],
+          "currentSamplesMs": [
+            0.418,
+            0.231,
+            0.351,
+            0.301,
+            0.279
+          ]
+        },
+        {
+          "operation": "build packing facts",
+          "previousMedianMs": 0.458,
+          "currentMedianMs": 0.46,
+          "speedup": 0.994,
+          "previousSamplesMs": [
+            0.268,
+            0.458,
+            0.493,
+            0.494,
+            0.384
+          ],
+          "currentSamplesMs": [
+            0.24,
+            0.46,
+            1.008,
+            0.574,
+            0.196
+          ]
+        },
+        {
+          "operation": "search existing snapshot",
+          "previousMedianMs": 0.016,
+          "currentMedianMs": 0.014,
+          "speedup": 1.141,
+          "previousSamplesMs": [
+            0.008,
+            0.012,
+            0.071,
+            0.039,
+            0.016
+          ],
+          "currentSamplesMs": [
+            0.046,
+            0.014,
+            0.016,
+            0.009,
+            0.013
+          ]
+        },
+        {
+          "operation": "prepare 10 threads",
+          "previousMedianMs": 18.933,
+          "currentMedianMs": 16.945,
+          "speedup": 1.117,
+          "previousSamplesMs": [
+            29.443,
+            20.272,
+            14.854,
+            16.276,
+            18.933
+          ],
+          "currentSamplesMs": [
+            16.945,
+            16.167,
+            17.044,
+            17.007,
+            15.905
+          ]
+        },
+        {
+          "operation": "serialize backup",
+          "previousMedianMs": 9.307,
+          "currentMedianMs": 9.935,
+          "speedup": 0.937,
+          "previousSamplesMs": [
+            16.668,
+            9.878,
+            9.307,
+            8.433,
+            8.627
+          ],
+          "currentSamplesMs": [
+            19.372,
+            9.342,
+            16.801,
+            9.935,
+            8.77
+          ]
+        },
+        {
+          "operation": "restore backup",
+          "previousMedianMs": 8.017,
+          "currentMedianMs": 9.666,
+          "speedup": 0.829,
+          "previousSamplesMs": [
+            7.364,
+            13.896,
+            10.307,
+            8.017,
+            7.856
+          ],
+          "currentSamplesMs": [
+            8.761,
+            16.277,
+            14.81,
+            7.543,
+            9.666
+          ]
+        },
+        {
+          "operation": "preview 10 incoming messages",
+          "previousMedianMs": 10.277,
+          "currentMedianMs": 9.755,
+          "speedup": 1.054,
+          "previousSamplesMs": [
+            10.277,
+            9.51,
+            8.668,
+            10.496,
+            23.066
+          ],
+          "currentSamplesMs": [
+            26.841,
+            30.281,
+            9.066,
+            8.693,
+            9.755
+          ]
+        },
+        {
+          "operation": "accept 10 incoming messages",
+          "previousMedianMs": 17.219,
+          "currentMedianMs": 16.597,
+          "speedup": 1.038,
+          "previousSamplesMs": [
+            16.061,
+            16.846,
+            17.755,
+            18.587,
+            17.219
+          ],
+          "currentSamplesMs": [
+            19.128,
+            16.532,
+            16.597,
+            16.217,
+            16.714
+          ]
+        }
+      ]
+    },
+    {
+      "name": "busy-tray",
+      "threads": 2000,
+      "messages": 2000,
+      "routes": 2000,
+      "totalSteps": 12000,
+      "longestPath": 6,
+      "receivedBags": 0,
+      "backupBytes": 3849657,
+      "arrivals": 0,
+      "outbox": 100,
+      "measurements": [
+        {
+          "operation": "validate desk",
+          "previousMedianMs": 125.544,
+          "currentMedianMs": 122.448,
+          "speedup": 1.025,
+          "previousSamplesMs": [
+            127.893,
+            117.701,
+            120.633,
+            125.544,
+            134.748
+          ],
+          "currentSamplesMs": [
+            122.448,
+            119.287,
+            131.417,
+            121.734,
+            160.3
+          ]
+        },
+        {
+          "operation": "build board facts",
+          "previousMedianMs": 3.725,
+          "currentMedianMs": 4.102,
+          "speedup": 0.908,
+          "previousSamplesMs": [
+            3.923,
+            3.725,
+            4.689,
+            3.313,
+            3.599
+          ],
+          "currentSamplesMs": [
+            3.741,
+            7.401,
+            5.999,
+            4.102,
+            3.447
+          ]
+        },
+        {
+          "operation": "build packing facts",
+          "previousMedianMs": 5.071,
+          "currentMedianMs": 4.781,
+          "speedup": 1.061,
+          "previousSamplesMs": [
+            4.699,
+            5.789,
+            5.578,
+            5.071,
+            4.407
+          ],
+          "currentSamplesMs": [
+            5.026,
+            4.781,
+            7.003,
+            4.367,
+            4.67
+          ]
+        },
+        {
+          "operation": "search existing snapshot",
+          "previousMedianMs": 0.217,
+          "currentMedianMs": 0.257,
+          "speedup": 0.845,
+          "previousSamplesMs": [
+            0.217,
+            0.217,
+            0.582,
+            0.345,
+            0.206
+          ],
+          "currentSamplesMs": [
+            0.257,
+            0.198,
+            0.472,
+            0.414,
+            0.206
+          ]
+        },
+        {
+          "operation": "prepare 10 threads",
+          "previousMedianMs": 230.531,
+          "currentMedianMs": 232.428,
+          "speedup": 0.992,
+          "previousSamplesMs": [
+            230.531,
+            219.121,
+            223.921,
+            233.32,
+            234.993
+          ],
+          "currentSamplesMs": [
+            227.874,
+            221.63,
+            232.428,
+            232.883,
+            248.76
+          ]
+        },
+        {
+          "operation": "serialize backup",
+          "previousMedianMs": 158.802,
+          "currentMedianMs": 160.699,
+          "speedup": 0.988,
+          "previousSamplesMs": [
+            219.381,
+            150.025,
+            156.383,
+            158.802,
+            168.542
+          ],
+          "currentSamplesMs": [
+            201.017,
+            154.148,
+            160.699,
+            157.788,
+            161.704
+          ]
+        },
+        {
+          "operation": "restore backup",
+          "previousMedianMs": 123.381,
+          "currentMedianMs": 132.055,
+          "speedup": 0.934,
+          "previousSamplesMs": [
+            123.381,
+            122.513,
+            123.737,
+            123.089,
+            125.081
+          ],
+          "currentSamplesMs": [
+            121.815,
+            141.308,
+            132.055,
+            127.385,
+            151.823
+          ]
+        }
+      ]
+    },
+    {
+      "name": "travelled-desk",
+      "threads": 500,
+      "messages": 1000,
+      "routes": 2000,
+      "totalSteps": 18000,
+      "longestPath": 9,
+      "receivedBags": 0,
+      "backupBytes": 4790598,
+      "arrivals": 0,
+      "outbox": 100,
+      "measurements": [
+        {
+          "operation": "validate desk",
+          "previousMedianMs": 150.862,
+          "currentMedianMs": 144.677,
+          "speedup": 1.043,
+          "previousSamplesMs": [
+            150.862,
+            191.173,
+            143.138,
+            150.905,
+            144.218
+          ],
+          "currentSamplesMs": [
+            146.097,
+            144.677,
+            148.543,
+            144.293,
+            135.761
+          ]
+        },
+        {
+          "operation": "build board facts",
+          "previousMedianMs": 1.978,
+          "currentMedianMs": 1.713,
+          "speedup": 1.154,
+          "previousSamplesMs": [
+            1.743,
+            2.766,
+            2.967,
+            1.978,
+            1.915
+          ],
+          "currentSamplesMs": [
+            1.529,
+            3.98,
+            2.279,
+            1.561,
+            1.713
+          ]
+        },
+        {
+          "operation": "build packing facts",
+          "previousMedianMs": 2.428,
+          "currentMedianMs": 2.229,
+          "speedup": 1.09,
+          "previousSamplesMs": [
+            2.381,
+            2.775,
+            2.364,
+            2.549,
+            2.428
+          ],
+          "currentSamplesMs": [
+            2.101,
+            2.229,
+            2.18,
+            2.374,
+            2.635
+          ]
+        },
+        {
+          "operation": "search existing snapshot",
+          "previousMedianMs": 0.074,
+          "currentMedianMs": 0.068,
+          "speedup": 1.092,
+          "previousSamplesMs": [
+            0.07,
+            0.158,
+            0.074,
+            0.066,
+            0.094
+          ],
+          "currentSamplesMs": [
+            0.068,
+            0.066,
+            0.073,
+            0.067,
+            0.071
+          ]
+        },
+        {
+          "operation": "prepare 10 threads",
+          "previousMedianMs": 314.042,
+          "currentMedianMs": 334.463,
+          "speedup": 0.939,
+          "previousSamplesMs": [
+            312.247,
+            293.658,
+            354.542,
+            314.042,
+            326.07
+          ],
+          "currentSamplesMs": [
+            285.985,
+            304.143,
+            334.463,
+            347.417,
+            341.792
+          ]
+        },
+        {
+          "operation": "serialize backup",
+          "previousMedianMs": 287.634,
+          "currentMedianMs": 249.115,
+          "speedup": 1.155,
+          "previousSamplesMs": [
+            250.847,
+            287.634,
+            343.208,
+            347.293,
+            220.778
+          ],
+          "currentSamplesMs": [
+            204.567,
+            278.934,
+            352.366,
+            204.299,
+            249.115
+          ]
+        },
+        {
+          "operation": "restore backup",
+          "previousMedianMs": 214.698,
+          "currentMedianMs": 200.836,
+          "speedup": 1.069,
+          "previousSamplesMs": [
+            179.006,
+            192.346,
+            482.556,
+            283.617,
+            214.698
+          ],
+          "currentSamplesMs": [
+            197.614,
+            235.377,
+            200.836,
+            214.485,
+            191.433
+          ]
+        },
+        {
+          "operation": "preview 10 incoming messages",
+          "previousMedianMs": 418.515,
+          "currentMedianMs": 260.197,
+          "speedup": 1.608,
+          "previousSamplesMs": [
+            418.515,
+            264.524,
+            216.473,
+            474.518,
+            500.977
+          ],
+          "currentSamplesMs": [
+            183.554,
+            205.806,
+            260.197,
+            352.473,
+            815.081
+          ]
+        },
+        {
+          "operation": "accept 10 incoming messages",
+          "previousMedianMs": 392.125,
+          "currentMedianMs": 356.207,
+          "speedup": 1.101,
+          "previousSamplesMs": [
+            751.117,
+            392.125,
+            447.599,
+            332.097,
+            382.132
+          ],
+          "currentSamplesMs": [
+            535.687,
+            356.651,
+            356.207,
+            337.922,
+            348.02
+          ]
+        }
+      ]
+    }
+  ]
+}
